@@ -16,7 +16,7 @@ export interface Entry {
 const App: React.FC = () => {
   const [entries, setEntries] = useState<Entry[]>([]);
 
-  // Add entry
+ 
   const addEntry = (type: "income" | "expense", description: string, amount: number, date: Date) => {
     const newEntry: Entry = {
       id: Date.now(),
@@ -28,17 +28,17 @@ const App: React.FC = () => {
     setEntries((prevEntries) => [...prevEntries, newEntry]);
   };
 
-  // Delete entry
+ 
   const deleteEntry = (id: number) => {
     setEntries((prevEntries) => prevEntries.filter((entry) => entry.id !== id));
   };
 
-  // Edit entry (update description or amount)
+ 
   const editEntry = (id: number, updatedEntry: { description?: string; amount?: number }) => {
     setEntries((prevEntries) =>
       prevEntries.map((entry) =>
         entry.id === id
-          ? { ...entry, ...updatedEntry }  // Update only the fields that are passed in updatedEntry
+          ? { ...entry, ...updatedEntry } 
           : entry
       )
     );

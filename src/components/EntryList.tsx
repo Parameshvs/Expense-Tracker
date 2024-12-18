@@ -25,7 +25,6 @@ const EntryList: React.FC<EntryListProps> = ({ entries, onDelete, onEdit }) => {
       <ul>
         {entries.map((entry) => (
           <li key={entry.id}>
-            {/* Display existing entry or display editable input fields */}
             {editMode.id === entry.id ? (
               <div>
                 <input

@@ -39,12 +39,11 @@ const ExpenseChart: React.FC<ExpenseChartProps> = ({ entries }) => {
     ],
   };
 
-  // Fixing options - specify the exact expected structure
   const options = {
     responsive: true,
     plugins: {
       legend: {
-        position: "top" as const, // ensure proper positioning for the legend
+        position: "top" as const, 
       },
       title: {
         display: true,
@@ -53,12 +52,12 @@ const ExpenseChart: React.FC<ExpenseChartProps> = ({ entries }) => {
     },
     scales: {
       y: {
-        beginAtZero: true, // Ensure the y-axis starts at 0 for clarity
+        beginAtZero: true, 
       },
     },
   };
 
-  return <Bar data={data} options={options as any} />;  // Using 'any' if TypeScript errors persist
+  return <Bar data={data} options={options as any} />;  
 };
 
 export default ExpenseChart;
