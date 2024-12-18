@@ -1,0 +1,200 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    color: #4caf50;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Forms and Inputs */
+  form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  select:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Entry List Styles */
+  ul {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    margin: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  li button {
+    background-color: #f44336;
+  }
+  
+  li button:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Edit Mode Styling */
+  input[type="text"],
+  input[type="number"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  div > button {
+    margin-right: 10px;
+  }
+  
+  /* Chart and Summary Styles */
+  .chart-container {
+    max-width: 800px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  .summary {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .summary p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .summary p:last-child {
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  .summary p.balance-negative {
+    color: #f44336;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .chart-container {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  
+    form {
+      padding: 10px;
+      max-width: 100%;
+    }
+  
+    ul {
+      margin: 10px;
+    }
+  
+    li {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    button {
+      font-size: 1rem;
+    }
+  
+    .summary p {
+      font-size: 1rem;
+    }
+  
+    .summary {
+      max-width: 100%;
+    }
+  }/* Add this inside your existing CSS file */
+
+/* Styling the calendar input */
+input[type="date"] {
+    padding: 12px 16px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="date"]:focus {
+    border-color: #388e3c;
+    outline: none;
+  }
+  
+
+  
